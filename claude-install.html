@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude下载安装教程2025 - Windows/Mac/手机完整指南 | GrayBit</title>
+  <meta name="description" content="Claude下载安装教程，详细介绍Claude在Windows、Mac、iPhone、Android的安装步骤，免费版与Pro版区别，以及中国大陆如何使用Claude。">
+  <meta name="keywords" content="Claude下载,Claude安装教程,Claude怎么用,Claude注册,Claude中国使用,Claude免费版,Claude Pro">
+  <link rel="canonical" href="https://graybit.cn/install/claude/">
+  <meta property="og:title" content="Claude下载安装教程2025完整版 | GrayBit">
+  <meta property="og:description" content="Claude在Windows、Mac、手机的安装步骤，免费版与Pro版区别详解。">
+  <meta property="og:url" content="https://graybit.cn/install/claude/">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- JSON-LD 结构化数据，有助于 SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Claude下载安装教程",
+    "description": "详细介绍如何在各平台下载并安装Claude AI助手",
+    "url": "https://graybit.cn/install/claude/",
+    "step": [
+      {"@type": "HowToStep", "name": "注册Anthropic账号", "text": "访问claude.ai，使用邮箱或Google账号注册"},
+      {"@type": "HowToStep", "name": "验证手机号", "text": "输入手机号码完成验证"},
+      {"@type": "HowToStep", "name": "下载客户端", "text": "根据设备选择对应平台的安装包"},
+      {"@type": "HowToStep", "name": "登录使用", "text": "安装完成后登录账号即可使用"}
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f7f6f3;
+      --bg-tertiary: #f0ede8;
+      --text-primary: #1a1a18;
+      --text-secondary: #6b6b67;
+      --text-tertiary: #9b9b96;
+      --border-light: rgba(0,0,0,0.08);
+      --border-mid: rgba(0,0,0,0.14);
+      --green: #1D9E75;
+      --green-dark: #0F6E56;
+      --green-bg: #E1F5EE;
+      --green-light: #d0f0e3;
+      --yellow-bg: #FEF9E7;
+      --yellow-border: #F0C040;
+      --red-bg: #FEF0EE;
+      --red-border: #E87060;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-primary: #1c1c1a; --bg-secondary: #242422; --bg-tertiary: #2a2a28;
+        --text-primary: #f0ede8; --text-secondary: #a0a09a; --text-tertiary: #6b6b67;
+        --border-light: rgba(255,255,255,0.08); --border-mid: rgba(255,255,255,0.14);
+        --green-bg: #0a2e22; --green-light: #0d3828;
+        --yellow-bg: #2a2510; --red-bg: #2a1510;
+      }
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg-tertiary); color: var(--text-primary); line-height: 1.7; }
+    a { color: var(--green-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 32px; background: var(--bg-primary);
+      border-bottom: 0.5px solid var(--border-light);
+    }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: var(--text-primary); }
+    .logo span { color: var(--green); }
+    .logo a { color: inherit; text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { font-size: 14px; color: var(--text-secondary); text-decoration: none; }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-back { font-size: 13px; color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 4px; }
+    .nav-back:hover { color: var(--text-primary); text-decoration: none; }
+
+    /* LAYOUT */
+    .page-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: 1fr 260px; gap: 32px; align-items: start; }
+    @media (max-width: 768px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    /* BREADCRUMB */
+    .breadcrumb { font-size: 13px; color: var(--text-tertiary); margin-bottom: 24px; }
+    .breadcrumb a { color: var(--text-tertiary); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--text-secondary); }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ARTICLE */
+    .article { background: var(--bg-primary); border-radius: var(--radius-lg); border: 0.5px solid var(--border-light); padding: 40px; }
+
+    .article-header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 0.5px solid var(--border-light); }
+    .article-cat { display: inline-flex; align-items: center; gap: 5px; background: var(--green-bg); color: var(--green-dark); font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 99px; margin-bottom: 12px; }
+    .article h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .article-meta { font-size: 13px; color: var(--text-tertiary); display: flex; gap: 16px; flex-wrap: wrap; }
+
+    /* TOOL INFO CARD */
+    .tool-info { display: flex; align-items: center; gap: 16px; background: var(--bg-secondary); border-radius: var(--radius-lg); border: 0.5px solid var(--border-light); padding: 20px; margin-bottom: 32px; }
+    .tool-info-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--green-bg); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+    .tool-info-name { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .tool-info-desc { font-size: 13px; color: var(--text-secondary); }
+    .tool-info-btn { margin-left: auto; background: var(--green-dark); color: #fff; border: none; padding: 9px 18px; border-radius: var(--radius-md); font-size: 13px; cursor: pointer; font-family: inherit; font-weight: 500; white-space: nowrap; flex-shrink: 0; }
+
+    /* CONTENT */
+    .article h2 { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; margin: 36px 0 14px; letter-spacing: -0.3px; scroll-margin-top: 72px; }
+    .article h3 { font-size: 16px; font-weight: 600; margin: 24px 0 10px; color: var(--text-primary); }
+    .article p { font-size: 15px; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.8; }
+    .article ul, .article ol { padding-left: 20px; margin-bottom: 16px; }
+    .article li { font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 6px; }
+    .article strong { color: var(--text-primary); font-weight: 500; }
+
+    /* STEPS */
+    .steps { display: flex; flex-direction: column; gap: 16px; margin: 20px 0; }
+    .step { display: flex; gap: 16px; align-items: flex-start; }
+    .step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--green); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .step-body { flex: 1; }
+    .step-title { font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
+    .step-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+
+    /* CALLOUT */
+    .callout { border-radius: var(--radius-md); padding: 14px 18px; margin: 20px 0; font-size: 14px; line-height: 1.7; }
+    .callout-tip { background: var(--green-bg); border-left: 3px solid var(--green); color: var(--text-secondary); }
+    .callout-warn { background: var(--yellow-bg); border-left: 3px solid var(--yellow-border); color: var(--text-secondary); }
+    .callout-note { background: var(--red-bg); border-left: 3px solid var(--red-border); color: var(--text-secondary); }
+    .callout strong { color: var(--text-primary); }
+
+    /* PLATFORM TABS */
+    .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+    .tab-btn { padding: 7px 16px; border-radius: 99px; font-size: 13px; cursor: pointer; border: 0.5px solid var(--border-mid); color: var(--text-secondary); background: var(--bg-primary); font-family: inherit; transition: all .2s; }
+    .tab-btn.active { background: var(--text-primary); color: var(--bg-primary); border-color: var(--text-primary); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* PLAN COMPARE */
+    .plan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+    @media (max-width: 480px) { .plan-grid { grid-template-columns: 1fr; } }
+    .plan-card { border-radius: var(--radius-lg); border: 0.5px solid var(--border-light); padding: 20px; background: var(--bg-secondary); }
+    .plan-card.pro { border-color: var(--green); background: var(--green-bg); }
+    .plan-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .plan-price { font-size: 22px; font-weight: 700; color: var(--green); margin-bottom: 12px; }
+    .plan-price span { font-size: 13px; color: var(--text-secondary); font-weight: 400; }
+    .plan-features { list-style: none; padding: 0; }
+    .plan-features li { font-size: 13px; color: var(--text-secondary); padding: 4px 0; display: flex; gap: 7px; align-items: flex-start; }
+    .plan-features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .plan-features li.no::before { content: '✗'; color: #ccc; }
+
+    /* FAQ */
+    .faq-item { border-bottom: 0.5px solid var(--border-light); }
+    .faq-q { font-size: 15px; font-weight: 500; padding: 16px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text-primary); }
+    .faq-q::after { content: '+'; font-size: 20px; color: var(--text-tertiary); flex-shrink: 0; }
+    .faq-q.open::after { content: '−'; }
+    .faq-a { font-size: 14px; color: var(--text-secondary); line-height: 1.8; padding-bottom: 16px; display: none; }
+    .faq-a.open { display: block; }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 80px; }
+    .toc { background: var(--bg-primary); border-radius: var(--radius-lg); border: 0.5px solid var(--border-light); padding: 20px; margin-bottom: 16px; }
+    .toc-title { font-size: 13px; font-weight: 600; color: var(--text-tertiary); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 12px; }
+    .toc a { display: block; font-size: 13px; color: var(--text-secondary); padding: 5px 0; text-decoration: none; border-left: 2px solid transparent; padding-left: 10px; transition: all .15s; }
+    .toc a:hover, .toc a.active { color: var(--green); border-left-color: var(--green); }
+    .sidebar-card { background: var(--bg-primary); border-radius: var(--radius-lg); border: 0.5px solid var(--border-light); padding: 20px; margin-bottom: 16px; }
+    .sidebar-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+    .related-link { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); padding: 6px 0; border-bottom: 0.5px solid var(--border-light); text-decoration: none; }
+    .related-link:last-child { border-bottom: none; }
+    .related-link:hover { color: var(--green); }
+
+    /* FOOTER */
+    .footer { background: var(--bg-primary); border-top: 0.5px solid var(--border-light); padding: 32px; margin-top: 16px; text-align: center; }
+    .footer-logo { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .footer-logo span { color: var(--green); }
+    .footer p { font-size: 13px; color: var(--text-tertiary); }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .article { padding: 24px 20px; }
+      .article h1 { font-size: 22px; }
+      .tool-info { flex-wrap: wrap; }
+      .tool-info-btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo"><a href="/">gray<span>bit</span>.cn</a></div>
+  <div class="nav-links">
+    <a href="/#tools">AI工具库</a>
+    <a href="/#compare">工具对比</a>
+    <a href="/#install">安装教程</a>
+  </div>
+  <a class="nav-back" href="/#install">← 返回首页</a>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- 主内容 -->
+  <main>
+    <div class="breadcrumb">
+      <a href="/">首页</a><span>›</span>
+      <a href="/#install">安装教程</a><span>›</span>
+      Claude 下载安装教程
+    </div>
+
+    <article class="article">
+      <div class="article-header">
+        <div class="article-cat">📖 安装教程</div>
+        <h1>Claude 下载安装教程（2025年最新版）</h1>
+        <div class="article-meta">
+          <span>更新时间：2025年6月</span>
+          <span>适用版本：Claude 3.7</span>
+          <span>阅读时间：约5分钟</span>
+        </div>
+      </div>
+
+      <!-- 工具信息卡 -->
+      <div class="tool-info">
+        <div class="tool-info-icon">🤖</div>
+        <div>
+          <div class="tool-info-name">Claude</div>
+          <div class="tool-info-desc">由 Anthropic 开发 · 支持 Windows / macOS / iOS / Android</div>
+        </div>
+        <a href="https://claude.ai" target="_blank" rel="nofollow noopener">
+          <button class="tool-info-btn">官网访问 →</button>
+        </a>
+      </div>
+
+      <p>Claude 是由 Anthropic 公司开发的 AI 助手，以出色的长文本理解、代码生成和写作能力著称。本教程将手把手带你完成注册、下载和安装的全部流程。</p>
+
+      <div class="callout callout-tip">
+        <strong>💡 快速上手：</strong>Claude 无需下载也可以直接在浏览器中使用，访问 <strong>claude.ai</strong> 注册账号即可立刻体验，桌面端和手机端 App 是可选项。
+      </div>
+
+      <!-- 第一步：注册 -->
+      <h2 id="register">第一步：注册 Claude 账号</h2>
+      <p>无论使用哪个平台，都需要先注册一个 Anthropic 账号。</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">访问官网</div>
+            <div class="step-desc">打开浏览器，访问 <strong>claude.ai</strong>，点击右上角「Sign up」按钮。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">选择注册方式</div>
+            <div class="step-desc">支持 <strong>Google 账号</strong>一键登录，或用邮箱注册。推荐用 Google 账号，更快捷。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">验证手机号</div>
+            <div class="step-desc">输入手机号码接收验证码。<strong>支持中国大陆手机号（+86）</strong>，输入后点击发送验证码，填入即可完成验证。</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">完成注册</div>
+            <div class="step-desc">填写姓名，同意服务条款，账号即创建完成。免费版马上可以使用。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-warn">
+        <strong>⚠️ 注意：</strong>Claude 目前在中国大陆地区需要借助网络工具才能正常访问，注册和使用过程中请确保网络连接稳定。
+      </div>
+
+      <!-- 各平台安装 -->
+      <h2 id="install">第二步：下载安装客户端</h2>
+      <p>Claude 提供桌面端和移动端客户端，也可以直接在浏览器使用，选择最适合你的方式。</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab(this, 'windows')">🖥 Windows</button>
+        <button class="tab-btn" onclick="switchTab(this, 'mac')">🍎 macOS</button>
+        <button class="tab-btn" onclick="switchTab(this, 'ios')">📱 iPhone</button>
+        <button class="tab-btn" onclick="switchTab(this, 'android')">🤖 Android</button>
+        <button class="tab-btn" onclick="switchTab(this, 'browser')">🌐 浏览器</button>
+      </div>
+
+      <div id="tab-windows" class="tab-content active">
+        <h3>Windows 安装步骤</h3>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">下载安装包</div><div class="step-desc">访问 <strong>claude.ai/download</strong>，点击「Download for Windows」，下载 .exe 安装文件（约 120MB）。</div></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">运行安装程序</div><div class="step-desc">双击下载的 .exe 文件，如弹出 UAC 权限提示，点击「是」允许安装。安装过程自动完成，约1分钟。</div></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">启动并登录</div><div class="step-desc">安装完成后桌面会出现 Claude 图标，双击启动，用注册好的账号登录即可使用。</div></div></div>
+        </div>
+        <div class="callout callout-tip"><strong>系统要求：</strong>Windows 10 或更高版本，64位系统，至少 4GB 内存。</div>
+      </div>
+
+      <div id="tab-mac" class="tab-content">
+        <h3>macOS 安装步骤</h3>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">下载 DMG 文件</div><div class="step-desc">访问 <strong>claude.ai/download</strong>，点击「Download for Mac」，下载 .dmg 安装文件。</div></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">安装应用</div><div class="step-desc">双击 .dmg 文件，将 Claude 图标拖入「Applications（应用程序）」文件夹。</div></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">首次启动</div><div class="step-desc">从应用程序文件夹打开 Claude。首次运行 macOS 可能提示「来自未知开发者」，前往「系统设置 → 隐私与安全性」点击「仍要打开」即可。</div></div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-body"><div class="step-title">登录账号</div><div class="step-desc">用注册好的账号登录，即可开始使用。</div></div></div>
+        </div>
+        <div class="callout callout-tip"><strong>系统要求：</strong>macOS 12 (Monterey) 或更高版本，支持 Apple Silicon (M1/M2/M3) 和 Intel 芯片。</div>
+      </div>
+
+      <div id="tab-ios" class="tab-content">
+        <h3>iPhone / iPad 安装步骤</h3>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">切换 App Store 区域</div><div class="step-desc">Claude iOS 版需要在<strong>美区 App Store</strong> 下载。如果你的 Apple ID 是中国区，需要先切换到美区，或使用美区 Apple ID。</div></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">搜索并下载</div><div class="step-desc">在 App Store 搜索「<strong>Claude by Anthropic</strong>」，认准 Anthropic 出品的官方 App，点击下载安装。</div></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">登录使用</div><div class="step-desc">打开 App，用已注册的账号登录即可。界面简洁，支持语音输入。</div></div></div>
+        </div>
+        <div class="callout callout-warn"><strong>⚠️ 提示：</strong>App Store 中国区目前暂无 Claude，需要美区账号下载。可以搜索「美区 Apple ID 注册教程」了解如何创建美区账号。</div>
+      </div>
+
+      <div id="tab-android" class="tab-content">
+        <h3>Android 安装步骤</h3>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">通过 Google Play 下载</div><div class="step-desc">在 Google Play 商店搜索「<strong>Claude</strong>」，找到 Anthropic 出品的官方 App 下载安装。</div></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">或直接下载 APK</div><div class="step-desc">如果无法访问 Google Play，可以从 Anthropic 官网下载 APK 安装包，安装前需要在手机设置中允许「未知来源」安装。</div></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">登录使用</div><div class="step-desc">安装完成后打开 App，登录账号即可使用。</div></div></div>
+        </div>
+        <div class="callout callout-tip"><strong>系统要求：</strong>Android 8.0 或更高版本。</div>
+      </div>
+
+      <div id="tab-browser" class="tab-content">
+        <h3>浏览器直接使用（无需安装）</h3>
+        <p>这是最简单的方式，不需要下载任何软件。</p>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">打开浏览器</div><div class="step-desc">推荐使用 Chrome、Edge 或 Safari，在地址栏输入 <strong>claude.ai</strong>。</div></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">登录账号</div><div class="step-desc">输入账号密码或用 Google 账号登录。</div></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">开始对话</div><div class="step-desc">登录后即可在网页版使用全部功能，功能与客户端完全一致。</div></div></div>
+        </div>
+        <div class="callout callout-tip"><strong>小技巧：</strong>在 Chrome 中可以将 claude.ai 添加到桌面（浏览器菜单 → 更多工具 → 创建快捷方式），效果和客户端一样方便。</div>
+      </div>
+
+      <!-- 免费版 vs Pro -->
+      <h2 id="plans">免费版与 Pro 版对比</h2>
+      <p>Claude 提供免费版和付费 Pro 版，以下是两个版本的详细对比。</p>
+
+      <div class="plan-grid">
+        <div class="plan-card">
+          <div class="plan-name">免费版 Free</div>
+          <div class="plan-price">$0 <span>/ 月</span></div>
+          <ul class="plan-features">
+            <li>使用 Claude 3.5 Sonnet 模型</li>
+            <li>每天有使用次数限制</li>
+            <li>网页版 + 移动端</li>
+            <li>基础对话与写作功能</li>
+            <li class="no">无限对话次数</li>
+            <li class="no">不支持 Projects 项目</li>
+            <li class="no">优先响应速度</li>
+          </ul>
+        </div>
+        <div class="plan-card pro">
+          <div class="plan-name">Pro 版</div>
+          <div class="plan-price">$20 <span>/ 月</span></div>
+          <ul class="plan-features">
+            <li>使用最新 Claude 3.7 模型</li>
+            <li>5倍更多使用额度</li>
+            <li>Projects 项目管理功能</li>
+            <li>优先响应，速度更快</li>
+            <li>上传文件与图片分析</li>
+            <li>200K tokens 超长上下文</li>
+            <li>优先体验新功能</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-tip">
+        <strong>💡 建议：</strong>初次使用先体验免费版，如果用于工作写作、代码开发等高频场景，Pro 版的额度和功能提升非常明显，值得升级。
+      </div>
+
+      <!-- 常见问题 -->
+      <h2 id="faq">常见问题</h2>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Claude 在中国大陆能用吗？</div>
+        <div class="faq-a">Claude 官网 claude.ai 在中国大陆地区无法直接访问，需要借助网络工具。注册时需要一个可以接收验证码的手机号，中国大陆 +86 手机号目前支持接收验证码完成注册。使用过程中需要保持网络工具连接。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Claude 和 ChatGPT 有什么区别？</div>
+        <div class="faq-a">Claude 在长文本理解、写作质量和代码生成方面表现突出，上下文窗口更大（200K tokens），适合处理长篇文档和复杂分析。ChatGPT 的插件生态更丰富，与 Microsoft 产品集成更好。两者各有所长，可以参考我们的<a href="/compare/claude-vs-chatgpt/">详细对比页面</a>。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">免费版每天能发多少条消息？</div>
+        <div class="faq-a">免费版的使用限制不是固定的消息条数，而是基于使用量（tokens）计算。一般情况下，日常轻度使用完全够用。但如果发送很长的文档分析请求，可能较快触达限制。触达限制后需要等待重置（通常几小时后恢复）或升级 Pro 版。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Claude 支持中文吗？</div>
+        <div class="faq-a">完全支持中文。Claude 可以用中文对话、写作、分析文档，中文理解和表达能力都很强。你直接用中文提问，Claude 也会用中文回答。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Claude Pro 值得订阅吗？</div>
+        <div class="faq-a">如果你每天都在使用 Claude 进行工作，比如写作、编程、数据分析，Pro 版每月 $20（约 145 元）是非常值得的投资。主要优势是更多的使用额度、最新模型和 Projects 功能。如果只是偶尔使用，免费版足够。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">如何取消 Claude Pro 订阅？</div>
+        <div class="faq-a">登录 claude.ai → 点击右上角头像 → 进入「Settings（设置）」→ 找到「Billing（账单）」→ 点击「Manage Subscription（管理订阅）」→ 选择取消即可。取消后当前订阅周期结束前仍可使用 Pro 功能。</div>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- 侧边栏 -->
+  <aside class="sidebar">
+    <div class="toc">
+      <div class="toc-title">本文目录</div>
+      <a href="#register">第一步：注册账号</a>
+      <a href="#install">第二步：下载安装</a>
+      <a href="#plans">免费版 vs Pro 版</a>
+      <a href="#faq">常见问题</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>相关教程</h4>
+      <a class="related-link" href="/install/chatgpt/">💬 ChatGPT 安装教程</a>
+      <a class="related-link" href="/install/cursor/">⌨️ Cursor 编辑器安装</a>
+      <a class="related-link" href="/compare/claude-vs-chatgpt/">⚖️ Claude vs ChatGPT 对比</a>
+      <a class="related-link" href="/tools/claude/">🤖 Claude 功能详解</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>官方链接</h4>
+      <a class="related-link" href="https://claude.ai" target="_blank" rel="nofollow noopener">🌐 Claude 官网</a>
+      <a class="related-link" href="https://claude.ai/download" target="_blank" rel="nofollow noopener">⬇️ 下载客户端</a>
+      <a class="related-link" href="https://www.anthropic.com" target="_blank" rel="nofollow noopener">🏢 Anthropic 官网</a>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-logo">gray<span>bit</span>.cn</div>
+  <p>发现最好用的 AI 工具，持续更新中</p>
+  <p style="margin-top:8px; font-size:12px;">© 2025 graybit.cn · <a href="/privacy/" style="color:inherit">隐私政策</a></p>
+</footer>
+
+<script>
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + id).classList.add('active');
+  }
+
+  function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    el.classList.toggle('open');
+    answer.classList.toggle('open');
+  }
+
+  // 目录高亮
+  const headings = document.querySelectorAll('h2[id]');
+  const tocLinks = document.querySelectorAll('.toc a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    headings.forEach(h => {
+      if (window.scrollY >= h.offsetTop - 100) current = h.id;
+    });
+    tocLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+
+</body>
+</html>
