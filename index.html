@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrayBit - AI工具导航 | Claude下载安装教程、AI工具对比</title>
+  <meta name="description" content="收录Claude、ChatGPT、Gemini等主流AI工具的下载安装教程、功能对比与使用指南，帮你找到最适合的AI助手。">
+  <meta name="keywords" content="Claude下载,Claude安装教程,AI工具导航,ChatGPT使用,AI工具对比,Gemini,Midjourney">
+  <link rel="canonical" href="https://graybit.cn/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="GrayBit - AI工具导航">
+  <meta property="og:description" content="发现最好用的AI工具，一站导航。Claude、ChatGPT、Gemini安装教程与对比。">
+  <meta property="og:url" content="https://graybit.cn/">
+  <meta property="og:type" content="website">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f7f6f3;
+      --bg-tertiary: #f0ede8;
+      --text-primary: #1a1a18;
+      --text-secondary: #6b6b67;
+      --text-tertiary: #9b9b96;
+      --border-light: rgba(0,0,0,0.08);
+      --border-mid: rgba(0,0,0,0.14);
+      --border-strong: rgba(0,0,0,0.25);
+      --green: #1D9E75;
+      --green-dark: #0F6E56;
+      --green-bg: #E1F5EE;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-primary: #1c1c1a;
+        --bg-secondary: #242422;
+        --bg-tertiary: #2a2a28;
+        --text-primary: #f0ede8;
+        --text-secondary: #a0a09a;
+        --text-tertiary: #6b6b67;
+        --border-light: rgba(255,255,255,0.08);
+        --border-mid: rgba(255,255,255,0.14);
+        --border-strong: rgba(255,255,255,0.25);
+        --green-bg: #0a2e22;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 32px;
+      background: var(--bg-primary);
+      border-bottom: 0.5px solid var(--border-light);
+      backdrop-filter: blur(12px);
+    }
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px; font-weight: 700;
+      color: var(--text-primary); letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--green); }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      font-size: 14px; color: var(--text-secondary);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      background: var(--text-primary); color: var(--bg-primary);
+      border: none; padding: 7px 16px;
+      border-radius: var(--radius-md);
+      font-size: 13px; cursor: pointer; font-weight: 500;
+      font-family: inherit; transition: opacity .2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ── HERO ── */
+    .hero-wrap { background: var(--bg-primary); }
+    .hero {
+      padding: 64px 32px 48px;
+      text-align: center; max-width: 720px; margin: 0 auto;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--green-bg); color: var(--green-dark);
+      font-size: 12px; font-weight: 500;
+      padding: 4px 12px; border-radius: 99px; margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 42px; font-weight: 700;
+      line-height: 1.15; letter-spacing: -1px;
+      color: var(--text-primary); margin-bottom: 16px;
+    }
+    .hero h1 em { font-style: normal; color: var(--green); }
+    .hero p {
+      font-size: 16px; color: var(--text-secondary);
+      line-height: 1.7; margin-bottom: 28px;
+    }
+    .search-wrap {
+      display: flex; gap: 8px;
+      max-width: 480px; margin: 0 auto;
+    }
+    .search-wrap input {
+      flex: 1; padding: 10px 16px;
+      border: 0.5px solid var(--border-mid);
+      border-radius: var(--radius-md);
+      font-size: 14px; font-family: inherit;
+      background: var(--bg-primary); color: var(--text-primary);
+      outline: none; transition: border-color .2s;
+    }
+    .search-wrap input:focus { border-color: var(--green); }
+    .search-wrap button {
+      background: var(--green-dark); color: #fff;
+      border: none; padding: 10px 20px;
+      border-radius: var(--radius-md);
+      font-size: 14px; cursor: pointer;
+      font-weight: 500; white-space: nowrap;
+      font-family: inherit; transition: background .2s;
+    }
+    .search-wrap button:hover { background: var(--green); }
+
+    /* ── STATS ── */
+    .stats-bar {
+      display: flex; gap: 0;
+      background: var(--bg-secondary);
+      border-top: 0.5px solid var(--border-light);
+      border-bottom: 0.5px solid var(--border-light);
+    }
+    .stat-item {
+      flex: 1; text-align: center;
+      padding: 20px 16px;
+      border-right: 0.5px solid var(--border-light);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 24px; font-weight: 700; color: var(--text-primary);
+    }
+    .stat-label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+
+    /* ── MAIN CONTENT ── */
+    .main { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── CATS ── */
+    .cats {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      padding: 28px 0 4px;
+    }
+    .cat {
+      padding: 6px 14px; border-radius: 99px;
+      font-size: 13px; cursor: pointer; font-family: inherit;
+      border: 0.5px solid var(--border-mid);
+      color: var(--text-secondary);
+      background: var(--bg-primary);
+      transition: all .2s;
+    }
+    .cat.active {
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      border-color: var(--text-primary);
+    }
+    .cat:hover:not(.active) { background: var(--bg-secondary); }
+
+    /* ── SECTION ── */
+    .section { padding: 32px 0; }
+    .section-head {
+      display: flex; align-items: baseline;
+      justify-content: space-between; margin-bottom: 16px;
+    }
+    .section-head h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px; font-weight: 700;
+      color: var(--text-primary); letter-spacing: -0.3px;
+    }
+    .section-head a { font-size: 13px; color: var(--green); }
+    .section-head a:hover { text-decoration: underline; }
+
+    /* ── TOOL CARDS ── */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 12px;
+    }
+    .tool-card {
+      background: var(--bg-primary);
+      border: 0.5px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 16px; cursor: pointer;
+      transition: border-color .2s, background .15s;
+      position: relative;
+    }
+    .tool-card:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-secondary);
+    }
+    .tool-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; margin-bottom: 10px;
+    }
+    .tool-name {
+      font-size: 14px; font-weight: 500;
+      color: var(--text-primary); margin-bottom: 4px;
+    }
+    .tool-desc {
+      font-size: 12px; color: var(--text-secondary);
+      line-height: 1.5; margin-bottom: 10px;
+    }
+    .tool-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+    .tag {
+      font-size: 11px; padding: 2px 8px;
+      border-radius: 99px;
+      border: 0.5px solid var(--border-light);
+      color: var(--text-tertiary);
+    }
+    .badge {
+      position: absolute; top: 10px; right: 10px;
+      font-size: 10px; padding: 2px 7px;
+      border-radius: 99px; font-weight: 500; color: #fff;
+    }
+    .badge-hot { background: #E24B4A; }
+    .badge-new { background: var(--green); }
+
+    /* ── COMPARE ── */
+    .compare-wrap {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      border: 0.5px solid var(--border-light);
+      padding: 0; overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .compare-table {
+      width: 100%; font-size: 13px;
+      border-collapse: collapse;
+    }
+    .compare-table th {
+      text-align: left; padding: 10px 14px;
+      color: var(--text-secondary); font-weight: 400;
+      background: var(--bg-tertiary);
+      border-bottom: 0.5px solid var(--border-light);
+    }
+    .compare-table td {
+      padding: 10px 14px;
+      border-bottom: 0.5px solid var(--border-light);
+      color: var(--text-primary);
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:hover td { background: var(--bg-primary); }
+    .c-yes { color: var(--green); font-weight: 500; }
+    .c-no { color: #E24B4A; }
+    .c-part { color: #BA7517; }
+    .model-pill { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+    /* ── INSTALL CARDS ── */
+    .install-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .install-card {
+      background: var(--bg-primary);
+      border: 0.5px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 18px; cursor: pointer;
+      transition: border-color .2s, background .15s;
+    }
+    .install-card:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-secondary);
+    }
+    .inst-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .inst-icon {
+      width: 34px; height: 34px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; flex-shrink: 0;
+    }
+    .inst-title { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+    .inst-sub { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+    .inst-steps {
+      font-size: 12px; color: var(--text-secondary);
+      line-height: 1.9; padding-left: 16px;
+    }
+    .inst-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      margin-top: 12px; font-size: 12px;
+      color: var(--green); font-weight: 500;
+    }
+    .inst-btn:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--bg-primary);
+      border-top: 0.5px solid var(--border-light);
+      padding: 32px; margin-top: 48px;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px; font-weight: 700; margin-bottom: 8px;
+    }
+    .footer-logo span { color: var(--green); }
+    .footer p { font-size: 13px; color: var(--text-tertiary); margin-bottom: 16px; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; }
+    .footer-links a { font-size: 13px; color: var(--text-secondary); }
+    .footer-links a:hover { color: var(--text-primary); }
+
+    /* ── DIVIDER ── */
+    .divider { height: 0.5px; background: var(--border-light); margin: 8px 0; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 28px; }
+      .hero { padding: 40px 20px 32px; }
+      .stats-bar { flex-wrap: wrap; }
+      .stat-item { min-width: 50%; border-right: none; border-bottom: 0.5px solid var(--border-light); }
+      .main { padding: 0 16px; }
+      .compare-table { font-size: 12px; }
+      .compare-table th, .compare-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">gray<span>bit</span>.cn</div>
+  <div class="nav-links">
+    <a href="#tools">AI工具库</a>
+    <a href="#compare">工具对比</a>
+    <a href="#install">安装教程</a>
+    <a href="#about">关于我们</a>
+  </div>
+  <button class="nav-cta">提交工具</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero-wrap">
+  <div class="hero">
+    <div class="hero-eyebrow">
+      <i class="ti ti-bolt" style="font-size:13px" aria-hidden="true"></i>
+      持续收录最新 AI 工具
+    </div>
+    <h1>发现最好用的<br><em>AI 工具</em>，一站导航</h1>
+    <p>收录 Claude、ChatGPT、Gemini 等主流 AI 工具的下载安装教程、功能对比与使用指南，帮你找到最适合的 AI 助手。</p>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="搜索 AI 工具，如 Claude、Midjourney..." aria-label="搜索AI工具" />
+      <button onclick="handleSearch()">搜索工具</button>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">120+</div>
+      <div class="stat-label">收录工具</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">15</div>
+      <div class="stat-label">工具分类</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">40+</div>
+      <div class="stat-label">安装教程</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">每周</div>
+      <div class="stat-label">更新频率</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- CATEGORY FILTER -->
+  <div class="cats" role="group" aria-label="工具分类筛选">
+    <button class="cat active" onclick="filterCat(this, 'all')">全部工具</button>
+    <button class="cat" onclick="filterCat(this, 'chat')">AI 聊天</button>
+    <button class="cat" onclick="filterCat(this, 'write')">AI 写作</button>
+    <button class="cat" onclick="filterCat(this, 'image')">AI 绘图</button>
+    <button class="cat" onclick="filterCat(this, 'code')">AI 编程</button>
+    <button class="cat" onclick="filterCat(this, 'video')">AI 视频</button>
+    <button class="cat" onclick="filterCat(this, 'search')">AI 搜索</button>
+    <button class="cat" onclick="filterCat(this, 'efficiency')">效率工具</button>
+  </div>
+
+  <!-- TOOLS SECTION -->
+  <section class="section" id="tools" aria-labelledby="tools-heading">
+    <div class="section-head">
+      <h2 id="tools-heading">热门 AI 工具</h2>
+      <a href="/tools/">查看全部 →</a>
+    </div>
+    <div class="tools-grid" id="toolsGrid">
+
+      <article class="tool-card" data-cat="chat code write" onclick="location.href='/tools/claude/'">
+        <span class="badge badge-hot">热门</span>
+        <div class="tool-icon" style="background:#E1F5EE">🤖</div>
+        <div class="tool-name">Claude</div>
+        <div class="tool-desc">Anthropic 出品，强大的 AI 助手，支持长文本分析与代码生成</div>
+        <div class="tool-tags">
+          <span class="tag">聊天</span>
+          <span class="tag">写作</span>
+          <span class="tag">编程</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="chat image" onclick="location.href='/tools/chatgpt/'">
+        <span class="badge badge-hot">热门</span>
+        <div class="tool-icon" style="background:#E6F1FB">💬</div>
+        <div class="tool-name">ChatGPT</div>
+        <div class="tool-desc">OpenAI 旗舰产品，全球最广泛使用的 AI 对话助手</div>
+        <div class="tool-tags">
+          <span class="tag">聊天</span>
+          <span class="tag">多模态</span>
+          <span class="tag">插件</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="chat search" onclick="location.href='/tools/gemini/'">
+        <span class="badge badge-new">新</span>
+        <div class="tool-icon" style="background:#FAEEDA">✨</div>
+        <div class="tool-name">Gemini</div>
+        <div class="tool-desc">Google 最新 AI 模型，深度整合 Google 搜索与 Workspace</div>
+        <div class="tool-tags">
+          <span class="tag">聊天</span>
+          <span class="tag">搜索</span>
+          <span class="tag">多模态</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="image" onclick="location.href='/tools/midjourney/'">
+        <div class="tool-icon" style="background:#FBEAF0">🎨</div>
+        <div class="tool-name">Midjourney</div>
+        <div class="tool-desc">顶级 AI 图像生成工具，以高质量艺术风格著称</div>
+        <div class="tool-tags">
+          <span class="tag">绘图</span>
+          <span class="tag">艺术</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="code" onclick="location.href='/tools/cursor/'">
+        <span class="badge badge-new">新</span>
+        <div class="tool-icon" style="background:#EEEDFE">⌨️</div>
+        <div class="tool-name">Cursor</div>
+        <div class="tool-desc">AI 原生代码编辑器，基于 Claude 驱动，提升编程效率</div>
+        <div class="tool-tags">
+          <span class="tag">编程</span>
+          <span class="tag">IDE</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="search" onclick="location.href='/tools/perplexity/'">
+        <div class="tool-icon" style="background:#EAF3DE">🔍</div>
+        <div class="tool-name">Perplexity</div>
+        <div class="tool-desc">AI 驱动的搜索引擎，实时联网检索并给出答案与引用</div>
+        <div class="tool-tags">
+          <span class="tag">搜索</span>
+          <span class="tag">研究</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="write efficiency" onclick="location.href='/tools/notion-ai/'">
+        <div class="tool-icon" style="background:#F1EFE8">📝</div>
+        <div class="tool-name">Notion AI</div>
+        <div class="tool-desc">集成在 Notion 中的 AI 写作助手，支持文档总结与生成</div>
+        <div class="tool-tags">
+          <span class="tag">写作</span>
+          <span class="tag">笔记</span>
+        </div>
+      </article>
+
+      <article class="tool-card" data-cat="video" onclick="location.href='/tools/sora/'">
+        <span class="badge badge-new">新</span>
+        <div class="tool-icon" style="background:#E6F1FB">🎬</div>
+        <div class="tool-name">Sora</div>
+        <div class="tool-desc">OpenAI 文生视频模型，根据文字描述生成高质量视频</div>
+        <div class="tool-tags">
+          <span class="tag">视频</span>
+          <span class="tag">创意</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- COMPARE SECTION -->
+  <section class="section" id="compare" aria-labelledby="compare-heading">
+    <div class="section-head">
+      <h2 id="compare-heading">主流 AI 聊天工具对比</h2>
+      <a href="/compare/">深度对比 →</a>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>模型</th>
+            <th>上下文窗口</th>
+            <th>免费版</th>
+            <th>联网搜索</th>
+            <th>图像识别</th>
+            <th>API 开放</th>
+            <th>适合场景</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="model-pill"><span class="dot" style="background:#1D9E75"></span>Claude 3.7</span></td>
+            <td>200K tokens</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td>长文分析、写作、代码</td>
+          </tr>
+          <tr>
+            <td><span class="model-pill"><span class="dot" style="background:#378ADD"></span>GPT-4o</span></td>
+            <td>128K tokens</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td>通用对话、插件生态</td>
+          </tr>
+          <tr>
+            <td><span class="model-pill"><span class="dot" style="background:#BA7517"></span>Gemini 2.0</span></td>
+            <td>1M tokens</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-yes">✓ 有</td>
+            <td>Google 生态整合</td>
+          </tr>
+          <tr>
+            <td><span class="model-pill"><span class="dot" style="background:#D85A30"></span>Llama 3.3</span></td>
+            <td>128K tokens</td>
+            <td class="c-yes">✓ 开源</td>
+            <td class="c-no">✗ 无</td>
+            <td class="c-part">部分</td>
+            <td class="c-yes">✓ 自部署</td>
+            <td>本地部署、隐私场景</td>
+          </tr>
+          <tr>
+            <td><span class="model-pill"><span class="dot" style="background:#7F77DD"></span>DeepSeek R1</span></td>
+            <td>64K tokens</td>
+            <td class="c-yes">✓ 有</td>
+            <td class="c-part">部分</td>
+            <td class="c-part">部分</td>
+            <td class="c-yes">✓ 有</td>
+            <td>推理、数学、代码</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- INSTALL SECTION -->
+  <section class="section" id="install" aria-labelledby="install-heading">
+    <div class="section-head">
+      <h2 id="install-heading">热门安装教程</h2>
+      <a href="/install/">全部教程 →</a>
+    </div>
+    <div class="install-grid">
+
+      <article class="install-card" onclick="location.href='/install/claude/'">
+        <div class="inst-head">
+          <div class="inst-icon" style="background:#E1F5EE">🤖</div>
+          <div>
+            <div class="inst-title">Claude 完整安装指南</div>
+            <div class="inst-sub">Windows / macOS / iOS / Android</div>
+          </div>
+        </div>
+        <ol class="inst-steps">
+          <li>注册 Anthropic 账号（需要手机验证）</li>
+          <li>下载 Claude 桌面端或移动端 App</li>
+          <li>选择免费版或 Pro 订阅方案</li>
+          <li>配置语言与偏好设置</li>
+        </ol>
+        <a class="inst-btn" href="/install/claude/">
+          <i class="ti ti-book" style="font-size:14px" aria-hidden="true"></i>
+          查看完整教程
+        </a>
+      </article>
+
+      <article class="install-card" onclick="location.href='/install/chatgpt/'">
+        <div class="inst-head">
+          <div class="inst-icon" style="background:#E6F1FB">💬</div>
+          <div>
+            <div class="inst-title">ChatGPT 客户端安装教程</div>
+            <div class="inst-sub">Windows / macOS / iOS / Android</div>
+          </div>
+        </div>
+        <ol class="inst-steps">
+          <li>访问 openai.com 注册账号</li>
+          <li>下载官方桌面端或手机端</li>
+          <li>免费版每天有使用次数限制</li>
+          <li>Plus 订阅解锁 GPT-4o 全部功能</li>
+        </ol>
+        <a class="inst-btn" href="/install/chatgpt/">
+          <i class="ti ti-book" style="font-size:14px" aria-hidden="true"></i>
+          查看完整教程
+        </a>
+      </article>
+
+      <article class="install-card" onclick="location.href='/install/cursor/'">
+        <div class="inst-head">
+          <div class="inst-icon" style="background:#EEEDFE">⌨️</div>
+          <div>
+            <div class="inst-title">Cursor 编辑器安装配置</div>
+            <div class="inst-sub">Windows / macOS / Linux</div>
+          </div>
+        </div>
+        <ol class="inst-steps">
+          <li>从 cursor.sh 下载安装包</li>
+          <li>导入 VS Code 配置与插件</li>
+          <li>配置 AI 模型（Claude / GPT-4）</li>
+          <li>开启 Copilot++ 自动补全</li>
+        </ol>
+        <a class="inst-btn" href="/install/cursor/">
+          <i class="ti ti-book" style="font-size:14px" aria-hidden="true"></i>
+          查看完整教程
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+</div><!-- /main -->
+
+<!-- FOOTER -->
+<footer class="footer" id="about">
+  <div class="footer-logo">gray<span>bit</span>.cn</div>
+  <p>发现最好用的 AI 工具，持续更新中 · 收录 120+ AI 工具</p>
+  <div class="footer-links">
+    <a href="/about/">关于我们</a>
+    <a href="/submit/">提交工具</a>
+    <a href="/sitemap.xml">网站地图</a>
+    <a href="/privacy/">隐私政策</a>
+  </div>
+  <p style="margin-top:16px; font-size:12px;">© 2025 graybit.cn · 保留所有权利</p>
+</footer>
+
+<script>
+  function filterCat(btn, cat) {
+    document.querySelectorAll('.cat').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.tool-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat.includes(cat)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function handleSearch() {
+    const q = document.getElementById('searchInput').value.trim();
+    if (q) {
+      alert('搜索功能开发中，即将上线！\n关键词：' + q);
+    }
+  }
+
+  document.getElementById('searchInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') handleSearch();
+  });
+</script>
+
+</body>
+</html>
