@@ -1,116 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- 首页 -->
   <url>
     <loc>https://graybit.cn/</loc>
-    <lastmod>2025-06-04</lastmod>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- 工具库 -->
-  <url>
-    <loc>https://graybit.cn/tools/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/tools/claude/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/tools/chatgpt/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/tools/gemini/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/tools/midjourney/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/tools/cursor/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/tools/perplexity/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 对比页 -->
-  <url>
-    <loc>https://graybit.cn/compare/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/compare/claude-vs-chatgpt/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/compare/claude-vs-gemini/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/compare/chatgpt-vs-gemini/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- 安装教程 -->
   <url>
-    <loc>https://graybit.cn/install/</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://graybit.cn/install/claude/</loc>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://graybit.cn/install/claude/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://graybit.cn/install/chatgpt/</loc>
-    <lastmod>2025-06-04</lastmod>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://graybit.cn/install/gemini/</loc>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://graybit.cn/install/cursor/</loc>
-    <lastmod>2025-06-04</lastmod>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
-  <!-- 其他 -->
+  <!-- 对比页 -->
   <url>
-    <loc>https://graybit.cn/about/</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://graybit.cn/compare/claude-vs-chatgpt/</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
