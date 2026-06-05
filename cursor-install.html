@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursor AI编辑器下载安装教程2025 - AI编程工具完整指南 | GrayBit</title>
+<meta name="description" content="Cursor AI编辑器下载安装教程，详细介绍Cursor在Windows、Mac、Linux的安装配置，与VS Code的区别，以及如何用Cursor提升编程效率。">
+<meta name="keywords" content="Cursor下载,Cursor安装教程,Cursor AI编辑器,Cursor vs VSCode,AI编程工具,Cursor怎么用">
+<link rel="canonical" href="https://graybit.cn/install/cursor/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg-primary:#ffffff;--bg-secondary:#f7f6f3;--bg-tertiary:#f0ede8;--text-primary:#1a1a18;--text-secondary:#6b6b67;--text-tertiary:#9b9b96;--border-light:rgba(0,0,0,0.08);--border-mid:rgba(0,0,0,0.14);--green:#1D9E75;--green-dark:#0F6E56;--green-bg:#E1F5EE;--yellow-bg:#FEF9E7;--yellow-border:#F0C040;--purple:#7F77DD;--purple-bg:#EEEDFE;--radius-md:8px;--radius-lg:12px}
+@media(prefers-color-scheme:dark){:root{--bg-primary:#1c1c1a;--bg-secondary:#242422;--bg-tertiary:#2a2a28;--text-primary:#f0ede8;--text-secondary:#a0a09a;--text-tertiary:#6b6b67;--border-light:rgba(255,255,255,0.08);--border-mid:rgba(255,255,255,0.14);--green-bg:#0a2e22;--yellow-bg:#2a2510;--purple-bg:#1a1940}}
+html{scroll-behavior:smooth}body{font-family:'Noto Sans SC',sans-serif;background:var(--bg-tertiary);color:var(--text-primary);line-height:1.7}a{color:var(--green-dark);text-decoration:none}a:hover{text-decoration:underline}
+.nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;background:var(--bg-primary);border-bottom:0.5px solid var(--border-light)}.logo{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:var(--text-primary)}.logo span{color:var(--green)}.logo a{color:inherit;text-decoration:none}.nav-links{display:flex;gap:24px}.nav-links a{font-size:14px;color:var(--text-secondary);text-decoration:none}.nav-links a:hover{color:var(--text-primary)}.nav-back{font-size:13px;color:var(--text-secondary);text-decoration:none}
+.page-wrap{max-width:1100px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 260px;gap:32px;align-items:start}
+.breadcrumb{font-size:13px;color:var(--text-tertiary);margin-bottom:24px}.breadcrumb a{color:var(--text-tertiary);text-decoration:none}.breadcrumb span{margin:0 6px}
+.article{background:var(--bg-primary);border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:40px}
+.article-header{margin-bottom:32px;padding-bottom:24px;border-bottom:0.5px solid var(--border-light)}
+.article-cat{display:inline-flex;align-items:center;gap:5px;background:var(--purple-bg);color:var(--purple);font-size:12px;font-weight:500;padding:3px 10px;border-radius:99px;margin-bottom:12px}
+.article h1{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;line-height:1.3;letter-spacing:-0.5px;margin-bottom:12px}
+.article-meta{font-size:13px;color:var(--text-tertiary);display:flex;gap:16px;flex-wrap:wrap}
+.tool-info{display:flex;align-items:center;gap:16px;background:var(--bg-secondary);border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:20px;margin-bottom:32px}
+.tool-info-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+.tool-info-name{font-size:18px;font-weight:700;margin-bottom:4px}.tool-info-desc{font-size:13px;color:var(--text-secondary)}
+.tool-info-btn{margin-left:auto;background:var(--green-dark);color:#fff;border:none;padding:9px 18px;border-radius:var(--radius-md);font-size:13px;cursor:pointer;font-family:inherit;font-weight:500;white-space:nowrap;flex-shrink:0;display:inline-block;text-decoration:none}
+.article h2{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin:36px 0 14px;letter-spacing:-0.3px;scroll-margin-top:72px}
+.article h3{font-size:16px;font-weight:600;margin:24px 0 10px}.article p{font-size:15px;color:var(--text-secondary);margin-bottom:14px;line-height:1.8}
+.article ul,.article ol{padding-left:20px;margin-bottom:16px}.article li{font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:6px}
+.article strong{color:var(--text-primary);font-weight:500}
+.code-block{background:var(--bg-secondary);border:0.5px solid var(--border-mid);border-radius:var(--radius-md);padding:14px 18px;font-family:'Courier New',monospace;font-size:13px;color:var(--text-primary);margin:12px 0;overflow-x:auto}
+.steps{display:flex;flex-direction:column;gap:16px;margin:20px 0}.step{display:flex;gap:16px;align-items:flex-start}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--green);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.step-body{flex:1}.step-title{font-size:15px;font-weight:500;color:var(--text-primary);margin-bottom:4px}.step-desc{font-size:14px;color:var(--text-secondary);line-height:1.7}
+.callout{border-radius:var(--radius-md);padding:14px 18px;margin:20px 0;font-size:14px;line-height:1.7}
+.callout-tip{background:var(--green-bg);border-left:3px solid var(--green);color:var(--text-secondary)}
+.callout-warn{background:var(--yellow-bg);border-left:3px solid var(--yellow-border);color:var(--text-secondary)}
+.callout-note{background:var(--purple-bg);border-left:3px solid var(--purple);color:var(--text-secondary)}
+.callout strong{color:var(--text-primary)}
+.tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tab-btn{padding:7px 16px;border-radius:99px;font-size:13px;cursor:pointer;border:0.5px solid var(--border-mid);color:var(--text-secondary);background:var(--bg-primary);font-family:inherit;transition:all .2s}
+.tab-btn.active{background:var(--text-primary);color:var(--bg-primary);border-color:var(--text-primary)}
+.tab-content{display:none}.tab-content.active{display:block}
+.compare-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.compare-table th{text-align:left;padding:10px 14px;background:var(--bg-secondary);color:var(--text-secondary);font-weight:400;border-bottom:0.5px solid var(--border-light)}
+.compare-table td{padding:10px 14px;border-bottom:0.5px solid var(--border-light);color:var(--text-primary)}
+.compare-table tr:last-child td{border-bottom:none}.compare-table tbody tr:hover td{background:var(--bg-secondary)}
+.c-yes{color:var(--green);font-weight:500}.c-no{color:#E24B4A}
+.plan-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0}
+.plan-card{border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:20px;background:var(--bg-secondary)}
+.plan-card.pro{border-color:var(--green);background:var(--green-bg)}
+.plan-name{font-size:15px;font-weight:700;margin-bottom:4px}.plan-price{font-size:22px;font-weight:700;color:var(--green);margin-bottom:12px}
+.plan-price span{font-size:13px;color:var(--text-secondary);font-weight:400}
+.plan-features{list-style:none;padding:0}.plan-features li{font-size:13px;color:var(--text-secondary);padding:4px 0;display:flex;gap:7px;align-items:flex-start}
+.plan-features li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}.plan-features li.no::before{content:'✗';color:#ccc}
+.faq-item{border-bottom:0.5px solid var(--border-light)}.faq-q{font-size:15px;font-weight:500;padding:16px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--text-primary)}
+.faq-q::after{content:'+';font-size:20px;color:var(--text-tertiary)}.faq-q.open::after{content:'−'}
+.faq-a{font-size:14px;color:var(--text-secondary);line-height:1.8;padding-bottom:16px;display:none}.faq-a.open{display:block}
+.sidebar{position:sticky;top:80px}.toc{background:var(--bg-primary);border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:20px;margin-bottom:16px}
+.toc-title{font-size:13px;font-weight:600;color:var(--text-tertiary);letter-spacing:.05em;text-transform:uppercase;margin-bottom:12px}
+.toc a{display:block;font-size:13px;color:var(--text-secondary);padding:5px 0;text-decoration:none;border-left:2px solid transparent;padding-left:10px;transition:all .15s}
+.toc a:hover,.toc a.active{color:var(--green);border-left-color:var(--green)}
+.sidebar-card{background:var(--bg-primary);border-radius:var(--radius-lg);border:0.5px solid var(--border-light);padding:20px;margin-bottom:16px}
+.sidebar-card h4{font-size:14px;font-weight:600;margin-bottom:10px}
+.related-link{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);padding:6px 0;border-bottom:0.5px solid var(--border-light);text-decoration:none}
+.related-link:last-child{border-bottom:none}.related-link:hover{color:var(--green)}
+.footer{background:var(--bg-primary);border-top:0.5px solid var(--border-light);padding:32px;margin-top:16px;text-align:center}
+.footer-logo{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px}.footer-logo span{color:var(--green)}
+.footer p{font-size:13px;color:var(--text-tertiary)}
+@media(max-width:768px){.page-wrap{grid-template-columns:1fr}.sidebar{display:none}.plan-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.nav-links{display:none}.article{padding:24px 20px}.article h1{font-size:22px}.tool-info{flex-wrap:wrap}.tool-info-btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="logo"><a href="/">gray<span>bit</span>.cn</a></div>
+  <div class="nav-links"><a href="/#tools">AI工具库</a><a href="/#compare">工具对比</a><a href="/#install">安装教程</a></div>
+  <a class="nav-back" href="/">← 返回首页</a>
+</nav>
+<div class="page-wrap">
+<main>
+<div class="breadcrumb"><a href="/">首页</a><span>›</span><a href="/#install">安装教程</a><span>›</span>Cursor 下载安装教程</div>
+<article class="article">
+<div class="article-header">
+  <div class="article-cat">📖 安装教程</div>
+  <h1>Cursor AI 编辑器下载安装教程（2025年最新版）</h1>
+  <div class="article-meta"><span>更新时间：2025年6月</span><span>适用平台：Windows / macOS / Linux</span><span>阅读时间：约6分钟</span></div>
+</div>
+<div class="tool-info">
+  <div class="tool-info-icon" style="background:#EEEDFE">⌨️</div>
+  <div><div class="tool-info-name">Cursor</div><div class="tool-info-desc">AI 原生代码编辑器，基于 Claude / GPT-4 驱动 · 支持 Windows / macOS / Linux</div></div>
+  <a href="https://cursor.sh" target="_blank" rel="nofollow noopener" class="tool-info-btn">官网下载 →</a>
+</div>
+<p>Cursor 是目前最受开发者欢迎的 AI 编程工具，基于 VS Code 构建，内置 Claude 和 GPT-4 模型。它不只是代码补全——你可以用自然语言描述需求让 AI 直接写代码、解释代码、重构整个文件，大幅提升编程效率。</p>
+<div class="callout callout-tip"><strong>💡 已有 VS Code？</strong>Cursor 可以一键导入你所有的 VS Code 配置、插件和主题，迁移成本几乎为零。</div>
+
+<h2 id="install">下载安装步骤</h2>
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(this,'windows')">🖥 Windows</button>
+  <button class="tab-btn" onclick="switchTab(this,'mac')">🍎 macOS</button>
+  <button class="tab-btn" onclick="switchTab(this,'linux')">🐧 Linux</button>
+</div>
+<div id="tab-windows" class="tab-content active">
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">下载安装包</div><div class="step-desc">访问 <strong>cursor.sh</strong>，点击「Download for Windows」，下载 .exe 安装文件。</div></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">安装</div><div class="step-desc">双击下载的 .exe 文件，按提示完成安装。Cursor 会自动安装到 Program Files 目录。</div></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">导入 VS Code 配置</div><div class="step-desc">首次启动时，Cursor 会询问是否导入 VS Code 的插件、主题和快捷键配置，选择「Import from VS Code」一键迁移。</div></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body"><div class="step-title">登录账号</div><div class="step-desc">注册或登录 Cursor 账号，免费版每月有额度，Pro 版无限制使用。</div></div></div>
+  </div>
+  <div class="callout callout-tip"><strong>系统要求：</strong>Windows 10 64位或更高版本。</div>
+</div>
+<div id="tab-mac" class="tab-content">
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">下载 DMG</div><div class="step-desc">访问 <strong>cursor.sh</strong>，点击「Download for Mac」，下载 .dmg 文件。支持 Apple Silicon 和 Intel 两个版本，网站会自动识别你的芯片类型。</div></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">安装</div><div class="step-desc">打开 .dmg 文件，将 Cursor 图标拖入「应用程序」文件夹。</div></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">首次启动配置</div><div class="step-desc">从应用程序打开 Cursor，选择导入 VS Code 配置，登录账号即可使用。</div></div></div>
+  </div>
+  <div class="callout callout-tip"><strong>系统要求：</strong>macOS 11.0 或更高，支持 M1/M2/M3 和 Intel 芯片。</div>
+</div>
+<div id="tab-linux" class="tab-content">
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">下载 AppImage</div><div class="step-desc">访问 cursor.sh，下载 Linux 版本的 .AppImage 文件。</div></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">赋予执行权限</div><div class="step-desc">在终端运行：</div></div></div>
+  </div>
+  <div class="code-block">chmod +x cursor-*.AppImage<br>./cursor-*.AppImage</div>
+  <div class="callout callout-note"><strong>提示：</strong>也可以安装到系统路径，或者使用 <code>--appimage-extract</code> 解压后安装。</div>
+</div>
+
+<h2 id="features">核心功能使用指南</h2>
+<h3>Tab 智能补全</h3>
+<p>Cursor 的 Tab 补全比普通代码补全更聪明。它能预测你下一步要写的代码，不只补全当前行，还能补全整个函数块。只需按 <strong>Tab</strong> 键接受建议。</p>
+<h3>Cmd+K 内联编辑</h3>
+<p>选中一段代码，按 <strong>Cmd+K（Mac）/ Ctrl+K（Windows）</strong>，输入自然语言描述你想要的修改。比如「把这个函数改成异步」「添加错误处理」，AI 直接在代码里修改。</p>
+<h3>Cmd+L 对话侧边栏</h3>
+<p>按 <strong>Cmd+L（Mac）/ Ctrl+L（Windows）</strong> 打开 AI 对话面板，可以问关于当前代码的任何问题，也可以让 AI 生成新的代码块。</p>
+<h3>Composer 多文件编辑</h3>
+<p>按 <strong>Cmd+I（Mac）/ Ctrl+I（Windows）</strong> 打开 Composer，可以让 AI 同时修改多个文件，适合重构或新增功能。</p>
+<div class="callout callout-note"><strong>🔑 选择 AI 模型：</strong>Cursor 支持切换 Claude 3.7、GPT-4o、o1 等多个模型。写代码推荐 Claude 3.7，推理问题推荐 o1。</div>
+
+<h2 id="vs-vscode">Cursor vs VS Code 对比</h2>
+<table class="compare-table">
+  <thead><tr><th>功能</th><th>Cursor</th><th>VS Code + Copilot</th></tr></thead>
+  <tbody>
+    <tr><td>AI 代码补全</td><td class="c-yes">✓ 内置，更智能</td><td>需付费订阅 Copilot</td></tr>
+    <tr><td>多文件 AI 编辑</td><td class="c-yes">✓ Composer 支持</td><td class="c-no">✗ 不支持</td></tr>
+    <tr><td>自然语言写代码</td><td class="c-yes">✓ Cmd+K 内联</td><td>有限支持</td></tr>
+    <tr><td>VS Code 插件兼容</td><td class="c-yes">✓ 完全兼容</td><td class="c-yes">✓ 原生</td></tr>
+    <tr><td>模型选择</td><td class="c-yes">✓ Claude/GPT-4/o1</td><td>仅 Copilot 模型</td></tr>
+    <tr><td>免费版</td><td>2000次补全/月</td><td>Copilot 需 $10/月</td></tr>
+  </tbody>
+</table>
+
+<h2 id="plans">免费版与 Pro 版</h2>
+<div class="plan-grid">
+  <div class="plan-card">
+    <div class="plan-name">免费版 Hobby</div>
+    <div class="plan-price">$0<span>/月</span></div>
+    <ul class="plan-features">
+      <li>2000 次 Tab 补全</li>
+      <li>50 次慢速高级请求</li>
+      <li>200 次 Cursor-small 请求</li>
+      <li>VS Code 插件兼容</li>
+      <li class="no">无限 Tab 补全</li>
+      <li class="no">无限高级模型请求</li>
+    </ul>
+  </div>
+  <div class="plan-card pro">
+    <div class="plan-name">Pro 版</div>
+    <div class="plan-price">$20<span>/月</span></div>
+    <ul class="plan-features">
+      <li>无限 Tab 补全</li>
+      <li>500 次快速高级请求/月</li>
+      <li>无限慢速高级请求</li>
+      <li>Claude 3.7 / GPT-4o / o1</li>
+      <li>优先响应速度</li>
+    </ul>
+  </div>
+  <div class="plan-card">
+    <div class="plan-name">Business 版</div>
+    <div class="plan-price">$40<span>/月/人</span></div>
+    <ul class="plan-features">
+      <li>Pro 版全部功能</li>
+      <li>集中团队管理</li>
+      <li>强制隐私模式</li>
+      <li>SSO 单点登录</li>
+      <li>使用情况分析</li>
+    </ul>
+  </div>
+</div>
+
+<h2 id="faq">常见问题</h2>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Cursor 会上传我的代码吗？隐私安全吗？</div><div class="faq-a">Cursor 默认会将代码片段发送给 AI 模型以提供建议。如果担心隐私，可以在设置中开启「Privacy Mode」，开启后代码不会被存储或用于训练。企业用户建议使用 Business 版，可以强制开启隐私模式。</div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Cursor 和 GitHub Copilot 哪个更好？</div><div class="faq-a">Cursor 的优势在于多文件编辑（Composer）、模型可选（Claude/GPT-4/o1）、以及更自然的对话式交互。Copilot 的优势是与 GitHub 深度整合，PR 描述自动生成、代码审查等功能更强。对于个人开发者，Cursor 的功能更全面且性价比高。</div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">我的 VS Code 插件能在 Cursor 里用吗？</div><div class="faq-a">可以，Cursor 基于 VS Code 构建，完全兼容 VS Code 的插件市场。第一次打开 Cursor 时可以一键导入所有已安装的 VS Code 插件。</div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">不会编程也能用 Cursor 吗？</div><div class="faq-a">Cursor 主要面向有一定编程基础的用户。如果你完全不会编程，可以用 Cursor 尝试用自然语言写简单的脚本，但要理解和修改 AI 生成的代码，还是需要一些基础知识。对于非开发者，Claude 或 ChatGPT 的网页版可能更适合。</div></div>
+</article>
+</main>
+<aside class="sidebar">
+  <div class="toc">
+    <div class="toc-title">本文目录</div>
+    <a href="#install">下载安装</a>
+    <a href="#features">核心功能</a>
+    <a href="#vs-vscode">与VS Code对比</a>
+    <a href="#plans">版本对比</a>
+    <a href="#faq">常见问题</a>
+  </div>
+  <div class="sidebar-card">
+    <h4>相关教程</h4>
+    <a class="related-link" href="/install/claude/">🤖 Claude 安装教程</a>
+    <a class="related-link" href="/install/chatgpt/">💬 ChatGPT 安装教程</a>
+    <a class="related-link" href="/compare/claude-vs-chatgpt/">⚖️ Claude vs ChatGPT</a>
+  </div>
+  <div class="sidebar-card">
+    <h4>官方链接</h4>
+    <a class="related-link" href="https://cursor.sh" target="_blank" rel="nofollow noopener">🌐 Cursor 官网</a>
+    <a class="related-link" href="https://cursor.sh/changelog" target="_blank" rel="nofollow noopener">📋 更新日志</a>
+  </div>
+</aside>
+</div>
+<footer class="footer">
+  <div class="footer-logo">gray<span>bit</span>.cn</div>
+  <p>发现最好用的 AI 工具，持续更新中</p>
+  <p style="margin-top:8px;font-size:12px">© 2025 graybit.cn</p>
+</footer>
+<script>
+function switchTab(btn,id){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));btn.classList.add('active');document.getElementById('tab-'+id).classList.add('active')}
+function toggleFaq(el){el.classList.toggle('open');el.nextElementSibling.classList.toggle('open')}
+const headings=document.querySelectorAll('h2[id]'),tocLinks=document.querySelectorAll('.toc a');
+window.addEventListener('scroll',()=>{let c='';headings.forEach(h=>{if(window.scrollY>=h.offsetTop-100)c=h.id});tocLinks.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+c)})});
+</script>
+</body></html>
